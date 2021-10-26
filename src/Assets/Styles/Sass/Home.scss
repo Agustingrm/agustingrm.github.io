@@ -1,0 +1,36 @@
+.homeContainer {
+  height: 100vh;
+  background-color: #161416;
+  span {
+    color: orange;
+  }
+  h2 {
+    margin: 0;
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.homeButtons {
+  border: 1px #700070 solid;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.homeButtons:hover {
+  background-color: #700070;
+  border: 1px #700070 solid;
+  box-shadow: 0 0 10px 4px #7000706b;
+}

@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import './Assets/Styles/App.css';
+import { BrowserRouter, Route } from "react-router-dom";
+import MainPage from "./Pages/MainPage";
 
 function App() {
   return (
-  <div>First Commit</div>
+    <BrowserRouter>
+      <Route path="/" exact component={MainPage} />
+    </BrowserRouter>
   );
 }
 

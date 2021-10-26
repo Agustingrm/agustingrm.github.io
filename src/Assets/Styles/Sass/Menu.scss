@@ -1,0 +1,37 @@
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  background-color: #161416;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+h1 {
+  color: #a700a7;
+  margin: 0 0 0 50px;
+  font-weight: 400;
+  span {
+    color: white;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0 100px 0 0;
+  li {
+    list-style-type: none;
+    padding: 0 20px;
+    color: white;
+    font-size: 18px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  li:hover {
+    color: #a700a7;
+  }
+}
