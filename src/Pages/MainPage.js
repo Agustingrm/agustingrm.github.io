@@ -3,6 +3,7 @@ import Contact from "../Components/Contact";
 import Home from "../Components/Home";
 import Menu from "../Components/Menu";
 import Projects from "../Components/Projects";
+import Skills from "../Components/Skills";
 
 function HomePage() {
   return (
@@ -10,6 +11,7 @@ function HomePage() {
       <Menu />
       <Home />
       <About />
+      <Skills />
       <Projects />
       <Contact />
     </div>

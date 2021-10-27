@@ -1,6 +1,38 @@
 .contactContainer {
-  background-color: #441844;
-  height: 200px;
+  background-color: #161416;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 45px;
+  margin: 10px 0;
+}
+.contactContainer a {
+  text-decoration: none;
+  color: orange;
+  font-size: 25px;
+}
+.contactContainer p {
+  color: white;
+}
+
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.icon {
+  width: 40px;
+  margin: 0 15px;
+}
+
+.icon:hover {
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=Contact.css.map */

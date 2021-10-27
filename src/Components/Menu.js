@@ -2,7 +2,7 @@ import "../Assets/Styles/Menu.css";
 
 function Menu() {
   return (
-    <div className="menuContainer">
+    <header className="menuContainer">
       <h1>
         <span>Agustin</span> Gramajo Gaitan
       </h1>
@@ -14,16 +14,16 @@ function Menu() {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="/">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="/">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
-    </div>
+    </header>
   );
 }
 

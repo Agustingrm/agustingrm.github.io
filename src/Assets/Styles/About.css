@@ -1,7 +1,7 @@
 .aboutContainer {
   background-color: #441844;
   display: grid;
-  grid-template-columns: 40% 30%;
+  grid-template-columns: 50% 20%;
   grid-template-rows: auto;
   justify-content: center;
   padding: 75px 0;
@@ -17,9 +17,6 @@
   align-self: center;
 }
 
-.bottomGrid {
-  grid-column: span 2;
-}
 .bottomGrid h3 {
   color: white;
   font-weight: 300;
@@ -51,7 +48,7 @@
 .face {
   width: 200px;
   position: relative;
-  border: 2px solid black;
+  border: 2px solid #cacaca;
   border-radius: 10px;
   top: 50px;
   left: calc(50% - 100px);
