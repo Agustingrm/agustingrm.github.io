@@ -1,7 +1,7 @@
 import "../Assets/Styles/Contact.css";
-import githubIcon from "../Assets/Icons/githubIcon.svg";
-import linkedinIcon from "../Assets/Icons/linkedinIcon.svg";
-import xingIcon from "../Assets/Icons/xingIcon.svg";
+import githubIcon from "../Assets/Icons/Social/githubIcon.svg";
+import linkedinIcon from "../Assets/Icons/Social/linkedinIcon.svg";
+import xingIcon from "../Assets/Icons/Social/xingIcon.svg";
 
 function Contact() {
   return (
