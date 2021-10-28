@@ -8,7 +8,7 @@ function Home() {
         <a href="#about" className="homeButtons">
           About me
         </a>
-        <a href="#portfolio" className="homeButtons">
+        <a href="#projects" className="homeButtons">
           Portfolio
         </a>
       </div>

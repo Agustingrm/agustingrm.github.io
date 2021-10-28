@@ -1,12 +1,15 @@
-import './Assets/Styles/App.css';
+import "./Assets/Styles/App.css";
 import { BrowserRouter, Route } from "react-router-dom";
+import GlobalState from "./Context/GlobalState";
 import MainPage from "./Pages/MainPage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Route path="/" exact component={MainPage} />
-    </BrowserRouter>
+    <GlobalState>
+      <BrowserRouter>
+        <Route path="/" exact component={MainPage} />
+      </BrowserRouter>
+    </GlobalState>
   );
 }
 
