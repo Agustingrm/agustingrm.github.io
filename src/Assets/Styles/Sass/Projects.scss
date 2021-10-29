@@ -1,4 +1,67 @@
-.projectsContainer {
-    height: 30vh;
-    background-color: rgb(68, 24, 68);
+.projectsSectionContainer {
+  height: 100vh;
+  background-color: rgb(68, 24, 68);
+  padding-top: 30px;
+  h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-column-gap: 50px;
+    justify-content: center;
+}
+
+.projectContainer {
+  background-color: #161416;
+  width: 400px;
+  border-radius: 10px;
+  p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+}
+
+.projectImage {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.projectSkills {
+  display: flex;
+}
+
+.projectButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+  a {
+    border: 1px #700070 solid;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 30px 20px;
+  }
+  .firstButton:hover {
+    background-color: #700070;
+    border: 1px #700070 solid;
+  }
+  .secondButton {
+    border-color: orange;
+  }
+  .secondButton:hover {
+    background-color: #ac7000;
+    border:  1px #ac7000 solid;
+  }
 }
