@@ -8,7 +8,7 @@
 .homeContainer h2 {
   margin: 0;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 18%;
   color: white;
   font-size: 48px;
   font-weight: 400;
@@ -33,6 +33,17 @@
   background-color: #700070;
   border: 1px #700070 solid;
   box-shadow: 0 0 10px 4px #7000706b;
+}
+
+@media all and (max-width: 960px) {
+  .homeContainer h2 {
+    padding-top: 22%;
+  }
+}
+@media all and (max-width: 600px) {
+  .homeContainer h2 {
+    padding-top: 40%;
+  }
 }
 
 /*# sourceMappingURL=Home.css.map */
