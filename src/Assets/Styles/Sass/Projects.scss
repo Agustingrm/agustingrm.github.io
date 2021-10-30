@@ -11,16 +11,21 @@
 }
 
 .projectGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-column-gap: 50px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-column-gap: 50px;
+  justify-content: center;
 }
 
 .projectContainer {
   background-color: #161416;
   width: 400px;
   border-radius: 10px;
+  h3 {
+    color: white;
+    font-weight: 300;
+    text-align: center;
+  }
   p {
     color: white;
     text-align: center;
@@ -31,7 +36,6 @@
 
 .projectImage {
   width: 400px;
-  margin-bottom: 10px;
 }
 
 .projectSkills {
@@ -52,8 +56,10 @@
     font-size: 20px;
     cursor: pointer;
     margin: 0 30px 20px;
+    transition: 0.3s;
   }
   .firstButton:hover {
+    transition: 0.3s;
     background-color: #700070;
     border: 1px #700070 solid;
   }
@@ -61,7 +67,8 @@
     border-color: orange;
   }
   .secondButton:hover {
-    background-color: #ac7000;
-    border:  1px #ac7000 solid;
+    transition: 0.3s;
+    color: #161416;
+    background-color: orange;
   }
 }

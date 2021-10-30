@@ -5,7 +5,7 @@ import SkillsDisplay from "./Subcomponents/SkillsDisplay";
 
 function Projects() {
   const context = useContext(PortfolioContext);
-  const projects = ["frontendEcommerce", "frontendEcommerce"];
+  const projects = ["frontendEcommerce", "restaurantPage"];
   return (
     <section id="projects" className="projectsSectionContainer">
       <h2>Featured Projects</h2>
@@ -14,6 +14,7 @@ function Projects() {
           return (
             <div className="projectContainer">
               <img src={context.projects[project].image} alt="Project Preview" className="projectImage" />
+              <h3>{context.projects[project].name}</h3>
               <div className="projectSkills">
                 {context.projects[project].technologiesEmployed.map((skill) => {
                   return <SkillsDisplay skill={skill} />;

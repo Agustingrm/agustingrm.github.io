@@ -20,6 +20,7 @@ import npm from "../Assets/Icons/Skills/npm.svg";
 import webpack from "../Assets/Icons/Skills/webpack.svg";
 //Projects images
 import ecommerce from "../Assets/Images/Projects/ecommerce.png";
+import restaurantPage from "../Assets/Images/Projects/restaurantPage.png";
 
 function GlobalState({ children }) {
   const skills = {
@@ -102,8 +103,15 @@ function GlobalState({ children }) {
       name: "Front-end React Ecommerce",
       image: ecommerce,
       technologiesEmployed: ["HTML5", "CSS3", "javascript", "react", "bootstrap"],
-      codeLink: 'https://github.com/Agustingrm/react_ecommerce',
-      previewLink: 'https://agustingrm.github.io/react_ecommerce/',
+      codeLink: "https://github.com/Agustingrm/react_ecommerce",
+      previewLink: "https://agustingrm.github.io/react_ecommerce/",
+    },
+    restaurantPage: {
+      name: "Webpack Restaurant Page",
+      image: restaurantPage,
+      technologiesEmployed: ["HTML5", "CSS3", "javascript", "webpack"],
+      codeLink: "https://github.com/Agustingrm/restaurantpage",
+      previewLink: "https://agustingrm.github.io/restaurantpage/",
     },
   };
   return <PortfolioContext.Provider value={{ skills, projects }}>{children}</PortfolioContext.Provider>;

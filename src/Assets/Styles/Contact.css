@@ -29,9 +29,11 @@
 .icon {
   width: 40px;
   margin: 0 15px;
+  transition: 0.1s;
 }
 
 .icon:hover {
+  transition: 0.1s;
   transform: scale(1.5);
 }
 
