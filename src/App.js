@@ -1,16 +1,22 @@
 import "./Assets/Styles/App.css";
-import { BrowserRouter, Route } from "react-router-dom";
 import GlobalState from "./Context/GlobalState";
-import MainPage from "./Pages/MainPage";
 import React from "react";
+import About from "../src/Components/About";
+import Contact from "../src/Components/Contact";
+import Home from "../src/Components/Home";
+import Menu from "../src/Components/Menu";
+import Projects from "../src/Components/Projects";
+import Skills from "../src/Components/Skills";
 
 function App() {
-  
   return (
     <GlobalState>
-        <BrowserRouter>
-          <Route path="/" exact component={MainPage} />
-        </BrowserRouter>
+      <Menu />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </GlobalState>
   );
 }
