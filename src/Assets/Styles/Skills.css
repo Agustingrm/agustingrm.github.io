@@ -53,4 +53,18 @@
   height: 100%;
 }
 
+@media all and (max-width: 960px) {
+  .skillsSectionContainer {
+    grid-template-columns: 280px;
+    height: auto;
+  }
+  .skillsSectionContainer h2 {
+    grid-column: 1/2;
+  }
+
+  .skillContainer {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+
 /*# sourceMappingURL=Skills.css.map */

@@ -73,4 +73,32 @@
   background-color: orange;
 }
 
+@media all and (max-width: 960px) {
+  .projectsSectionContainer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .projectGrid {
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+  }
+
+  .projectContainer {
+    width: 100%;
+  }
+
+  .projectImage {
+    width: 100%;
+  }
+
+  .projectSkills {
+    flex-wrap: wrap;
+  }
+
+  .projectButtonsContainer a {
+    margin: 0 20px 20px;
+  }
+}
+
 /*# sourceMappingURL=Projects.css.map */
