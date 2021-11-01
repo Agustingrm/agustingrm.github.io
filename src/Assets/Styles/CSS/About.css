@@ -43,12 +43,12 @@
 }
 
 .face {
-  width: 200px;
+  width: 150px;
   position: relative;
   border: 2px solid #cacaca;
   border-radius: 10px;
   float: right;
-  margin: 5px 10px 0;
+  margin: 5px 10px 50px;
 }
 
 @media all and (max-width: 960px) {
@@ -58,6 +58,7 @@
 
   .face {
     width: 130px;
+    margin: 5px 10px 0;
   }
 
   .languageContainer {
