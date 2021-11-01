@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Assets/Styles/Menu.css";
+import "../Assets/Styles/CSS/Menu.css";
 import topLine from "../Assets/MenuLines/topLine.svg";
 import middleLine from "../Assets/MenuLines/middleLine.svg";
 import bottomLine from "../Assets/MenuLines/bottomLine.svg";
@@ -35,7 +35,7 @@ function Menu() {
     <header className="menuContainer">
       <div className="menuBack">
         <h1>
-          <span>Agustin</span> Gramajo Gaitan
+          <a href='#home'><span>Agustin</span> Gramajo Gaitan</a>
         </h1>
       </div>
       {/* <ul className={menu ? "displayMenu" : "hideMenu"} animate={{x: -50}}> */}

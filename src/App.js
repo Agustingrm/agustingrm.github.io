@@ -1,4 +1,4 @@
-import "./Assets/Styles/App.css";
+import "./Assets/Styles/CSS/App.css";
 import GlobalState from "./Context/GlobalState";
 import React from "react";
 import About from "../src/Components/About";

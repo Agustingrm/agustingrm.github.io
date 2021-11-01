@@ -1,4 +1,4 @@
-import "../Assets/Styles/Contact.css";
+import "../Assets/Styles/CSS/Contact.css";
 import githubIcon from "../Assets/Icons/Social/githubIcon.svg";
 import linkedinIcon from "../Assets/Icons/Social/linkedinIcon.svg";
 import xingIcon from "../Assets/Icons/Social/xingIcon.svg";

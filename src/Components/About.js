@@ -1,4 +1,4 @@
-import "../Assets/Styles/About.css";
+import "../Assets/Styles/CSS/About.css";
 import face from "../Assets/Images/face.jpg";
 import Spain from "../Assets/Icons/Flags/Spain.svg";
 import France from "../Assets/Icons/Flags/France.svg";

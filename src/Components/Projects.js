@@ -1,4 +1,4 @@
-import "../Assets/Styles/Projects.css";
+import "../Assets/Styles/CSS/Projects.css";
 import PortfolioContext from "../Context/PortfolioContext";
 import { useContext } from "react";
 import SkillsDisplay from "./Subcomponents/SkillsDisplay";

@@ -23,6 +23,10 @@ h1 {
   font-weight: 400;
   z-index: 15;
 }
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
 h1 span {
   color: white;
 }

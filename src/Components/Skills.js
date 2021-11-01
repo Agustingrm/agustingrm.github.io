@@ -1,4 +1,4 @@
-import "../Assets/Styles/Skills.css";
+import "../Assets/Styles/CSS/Skills.css";
 import SkillsDisplay from "./Subcomponents/SkillsDisplay";
 
 function Skills() {
