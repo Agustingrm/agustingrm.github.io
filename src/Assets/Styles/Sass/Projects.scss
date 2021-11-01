@@ -79,7 +79,7 @@
     padding-bottom: 20px;
   }
   .projectGrid {
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-row-gap: 20px;
   }
   .projectContainer {
@@ -90,10 +90,32 @@
   }
   .projectSkills {
     flex-wrap: wrap;
+    justify-content: center;
+    p {
+      font-size: 12px;
+    }
+    .logoContainer {
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+
+    }
+    .logo {
+      width: 30px;
+    }
   }
   .projectButtonsContainer {
     a {
       margin: 0 20px 20px;
+    }
+  }
+}
+
+@media all and (max-width: 405px) {
+  .projectButtonsContainer {
+    a {
+      font-size: 16px;
+      margin: 0 10px 20px;
     }
   }
 }
