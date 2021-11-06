@@ -16,6 +16,7 @@ function About() {
       related to web development. <br/>These last months I started to do a master in project management, while I continue with my
       programming studies. 
       <div>
+      <br/>
         <h3>Languages I speak:</h3>
         <div className="languageContainer">
           <div className="languageBadge">
