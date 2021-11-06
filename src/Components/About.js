@@ -14,7 +14,7 @@ function About() {
       Hello! My name is Agustin, I'm an Argentinean/Spanish industrial engineer. After graduating I decided to go deeper into the
       world of programming, so I studied in Argentinean universities and on my own through www.theodinproject.com languages
       related to web development. <br/>These last months I started to do a master in project management, while I continue with my
-      programming studies. At the moment I'm looking for my first experience in front end development. 
+      programming studies. 
       <div>
         <h3>Languages I speak:</h3>
         <div className="languageContainer">
