@@ -1,4 +1,3 @@
-import "./Assets/Styles/CSS/App.css";
 import GlobalState from "./Context/GlobalState";
 import React from "react";
 import About from "../src/Components/About";
@@ -7,10 +6,12 @@ import Home from "../src/Components/Home";
 import Menu from "../src/Components/Menu";
 import Projects from "../src/Components/Projects";
 import Skills from "../src/Components/Skills";
+import GlobalStyles from "./Assets/Styles/GlobalStyles";
 
 function App() {
   return (
     <GlobalState>
+      <GlobalStyles />
       <Menu />
       <Home />
       <About />

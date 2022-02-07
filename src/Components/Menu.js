@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "../Assets/Styles/CSS/Menu.css";
 import topLine from "../Assets/MenuLines/topLine.svg";
 import middleLine from "../Assets/MenuLines/middleLine.svg";
 import bottomLine from "../Assets/MenuLines/bottomLine.svg";
 import { motion } from "framer-motion";
+import MenuContainerStyles from "../Assets/Styles/MenuStyles";
 
 function Menu() {
   const [menu, setMenu] = useState(false);
@@ -32,10 +32,12 @@ function Menu() {
     }
   };
   return (
-    <header className="menuContainer">
+    <MenuContainerStyles>
       <div className="menuBack">
         <h1>
-          <a href='#home'><span>Agustin</span> Gramajo Gaitan</a>
+          <a href="#home">
+            <span>Agustin</span> Gramajo Gaitan
+          </a>
         </h1>
       </div>
       {/* <ul className={menu ? "displayMenu" : "hideMenu"} animate={{x: -50}}> */}
@@ -67,11 +69,29 @@ function Menu() {
         </li>
       </motion.ul>
       <div className="menuButton" onClick={handleMenuClick}>
-        <motion.img src={topLine} alt="" className="topLine" animate={rotationTop} transition={{ type: "tween" }} />
-        <motion.img src={middleLine} alt="" className="middleLine" animate={rotationMiddle} transition={{ type: "tween" }} />
-        <motion.img src={bottomLine} alt="" className="bottomLine" animate={rotationBottom} transition={{ type: "tween" }} />
+        <motion.img
+          src={topLine}
+          alt=""
+          className="topLine"
+          animate={rotationTop}
+          transition={{ type: "tween" }}
+        />
+        <motion.img
+          src={middleLine}
+          alt=""
+          className="middleLine"
+          animate={rotationMiddle}
+          transition={{ type: "tween" }}
+        />
+        <motion.img
+          src={bottomLine}
+          alt=""
+          className="bottomLine"
+          animate={rotationBottom}
+          transition={{ type: "tween" }}
+        />
       </div>
-    </header>
+    </MenuContainerStyles>
   );
 }
 
