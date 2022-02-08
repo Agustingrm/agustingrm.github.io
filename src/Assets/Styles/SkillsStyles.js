@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SkillsContainerStyles = styled.section`
   background-color: #161416;
-  padding: 50px 0;
+  padding: 60px 0;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 280px);

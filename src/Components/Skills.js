@@ -5,9 +5,6 @@ import SkillsContainerStyles from "../Assets/Styles/SkillsStyles";
 
 function Skills() {
   const context = useContext(PortfolioContext);
-  if (!context.loading) {
-    context.data.frontend.map((asd) => console.log(asd.name));
-  }
   if (context.loading) {
     return <></>;
   } else {
@@ -18,7 +15,7 @@ function Skills() {
           <h3>Front-end</h3>
           <div className="skillContainer">
             {context.data.frontend.map((skill) => {
-              return <SkillsDisplay skill={skill} />;
+              return <SkillsDisplay skill={skill} key={`frontend${skill.name}`} />;
             })}
           </div>
         </div>
@@ -26,7 +23,7 @@ function Skills() {
           <h3>Back-end</h3>
           <div className="skillContainer">
             {context.data.backend.map((skill) => {
-              return <SkillsDisplay skill={skill} />;
+              return <SkillsDisplay skill={skill} key={`backend${skill.name}`} />;
             })}
           </div>
         </div>
@@ -34,7 +31,7 @@ function Skills() {
           <h3>Miscellaneous</h3>
           <div className="skillContainer">
             {context.data.miscellaneous.map((skill) => {
-              return <SkillsDisplay skill={skill} />;
+              return <SkillsDisplay skill={skill} key={`miscellaneous${skill.name}`} />;
             })}
           </div>
         </div>

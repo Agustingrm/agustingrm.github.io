@@ -4,7 +4,7 @@ function Home() {
   return (
     <HomeContainerStyles id="home">
       <h2>
-        Hey! I am Agustin <br /> <span>A Front-End Developer</span>
+        Hey! I am Agustin <br /> <span>A Full Stack Developer</span>
       </h2>
       <div className="buttonContainer">
         <a href="#about" className="homeButtons">
