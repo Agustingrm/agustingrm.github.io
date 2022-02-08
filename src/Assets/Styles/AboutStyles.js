@@ -62,11 +62,13 @@ const AboutContainerStyles = styled.section`
   }
 
   @media all and (max-width: 960px) {
+    grid-template-columns: 45% 45%;
     padding: 75px 5%;
-
+    p {
+      grid-column: span 2;
+    }
     .face {
-      width: 130px;
-      margin: 5px 10px 0;
+      display: none;
     }
     .languageContainer {
       display: flex;
