@@ -14,7 +14,7 @@ function Projects() {
         <div className="projectGrid">
           {context.data.projects.map((project) => {
             return (
-              <div className="projectContainer">
+              <div className="projectContainer" key={project.name}>
                 <a href={project.previewLink} target="_blank" rel="noreferrer noopener">
                   <img src={project.image.asset.url} alt="Project Preview" className="projectImage" />
                   <img
@@ -26,7 +26,7 @@ function Projects() {
                 <h3>{project.name}</h3>
                 <div className="projectSkills">
                   {project.technologiesEmployed.map((skill) => {
-                    return <SkillsDisplay skill={skill} />;
+                    return <SkillsDisplay skill={skill} key={`technologiesEmployed${skill.name}`} />;
                   })}
                 </div>
                 <div className="projectButtonsContainer">

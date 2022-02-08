@@ -1,25 +1,38 @@
 import styled from "styled-components";
 
-const AboutContainerStyles = styled.div`
+const AboutContainerStyles = styled.section`
   background-color: rgb(68, 24, 68);
-  display: block;
-  padding: 75px 20%;
+  display: grid;
+  grid-template-columns: 130px 700px;
+  justify-content: center;
+  grid-column-gap: 20px;
   color: white;
   font-weight: 300;
-  margin: 0;
-  text-align: justify;
+  padding: 60px 0;
   h2 {
-    font-size: 36px;
+    font-size: 45px;
     color: white;
     font-weight: 400;
-    grid-column: 1/3;
+    grid-column: span 2;
+    text-align: center;
+    margin: 0 0 10px;
   }
   h3 {
     color: white;
     font-weight: 300;
-    margin: 10px 0;
+    margin: 0 0 10px;
   }
-
+  p {
+    margin: 0;
+  }
+  .secondPart {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+  .languages {
+    grid-column: span 2;
+    margin: 0;
+  }
   .languageContainer {
     display: flex;
     flex-wrap: wrap;
@@ -32,9 +45,6 @@ const AboutContainerStyles = styled.div`
     background-color: rgba(170, 170, 170, 0.5);
     border-radius: 10px;
     margin: 5px 5px 0 0;
-    p {
-      margin: 0;
-    }
   }
 
   .flags {
@@ -48,8 +58,7 @@ const AboutContainerStyles = styled.div`
     position: relative;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 10px;
-    float: right;
-    margin: 5px 10px 50px;
+    float: left;
   }
 
   @media all and (max-width: 960px) {

@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 const ProjectContainerStyles = styled.section`
   background-color: rgb(68, 24, 68);
-  padding-top: 30px;
+  padding: 60px 0;
   h2 {
     color: white;
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 400;
     text-align: center;
+    margin: 10px 0 30px;
   }
 
   .projectGrid {
@@ -20,19 +21,17 @@ const ProjectContainerStyles = styled.section`
 
   .projectContainer {
     position: relative;
+    display: grid;
+    grid-template-rows: auto auto 100px auto;
     background-color: #161416;
     width: 400px;
     border-radius: 10px;
     h3 {
+      margin: 5px 0 10px;
+      font-size: 25px;
       color: white;
       font-weight: 300;
       text-align: center;
-    }
-    p {
-      color: white;
-      text-align: center;
-      font-size: 14px;
-      word-wrap: break-word;
     }
   }
 
@@ -54,7 +53,7 @@ const ProjectContainerStyles = styled.section`
 
   .projectSkills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 60px);
+    grid-template-columns: repeat(auto-fit, 50px);
     grid-column-gap: 5px;
     justify-content: center;
   }
@@ -96,32 +95,29 @@ const ProjectContainerStyles = styled.section`
       padding-bottom: 20px;
     }
     .projectGrid {
-      grid-template-columns: 80%;
+      margin: 0 20px;
+      grid-template-columns: repeat(auto-fit, 320px);
       grid-row-gap: 20px;
     }
     .projectContainer {
       width: 100%;
+      grid-template-rows: auto;
     }
     .projectImage {
       width: 100%;
     }
     .projectSkills {
-      flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fit, 45px);
       justify-content: center;
-      p {
-        font-size: 12px;
-      }
-      .logoContainer {
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-      }
-      .logo {
-        width: 30px;
+      margin-bottom: 10px;
+      grid-column-gap: 0px;
+      .projectSkillName {
+        display: none;
       }
     }
     .projectButtonsContainer {
       a {
+        font-size: 16px;
         margin: 0 20px 20px;
       }
     }

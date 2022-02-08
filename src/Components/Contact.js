@@ -12,12 +12,12 @@ function Contact() {
       <div className="socialNetworks">
         <div>
           <a href="https://github.com/Agustingrm" target="_blank" rel="noreferrer noopener">
-            <img src={githubIcon} alt="Github Icon" class="icon" />
+            <img src={githubIcon} alt="Github Icon" className="icon" />
           </a>
         </div>
         <div>
           <a href="https://www.linkedin.com/in/agustingrm" target="_blank" rel="noreferrer noopener">
-            <img src={linkedinIcon} alt="Linkedin Icon" class="icon" />
+            <img src={linkedinIcon} alt="Linkedin Icon" className="icon" />
           </a>
         </div>
         <div>
@@ -26,7 +26,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <img src={xingIcon} alt="XingIcon" class="icon" />
+            <img src={xingIcon} alt="XingIcon" className="icon" />
           </a>
         </div>
       </div>

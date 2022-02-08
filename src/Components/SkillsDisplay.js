@@ -12,7 +12,7 @@ function SkillsDisplay({ skill }) {
         <div className="logoContainer">
           <img src={skill.image.asset.url} alt={skill.name} className="logo" />
         </div>
-        <p>{skill.name}</p>
+        <p className="projectSkillName">{skill.name}</p>
       </SkillsDisplayStyles>
     );
   }
