@@ -41,13 +41,17 @@ const SkillsContainerStyles = styled.section`
   }
 
   @media all and (max-width: 960px) {
-    grid-template-columns: 280px;
+    grid-template-columns: 320px;
     height: auto;
     h2 {
       grid-column: 1 / 2;
     }
     .skillContainer {
       grid-template-columns: repeat(3, 30%);
+      .logoContainer {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 `;

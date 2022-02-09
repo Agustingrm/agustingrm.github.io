@@ -64,6 +64,9 @@ const AboutContainerStyles = styled.section`
   @media all and (max-width: 960px) {
     grid-template-columns: 45% 45%;
     padding: 75px 5%;
+    h2 {
+      margin-bottom: 15px;
+    }
     p {
       grid-column: span 2;
     }
