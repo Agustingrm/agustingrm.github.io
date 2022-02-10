@@ -20,6 +20,7 @@ const MenuContainerStyles = styled.header`
   h1 {
     color: #a700a7;
     margin: 0 0 0 45px;
+    font-size: 32px;
     font-weight: 400;
     z-index: 15;
     a {
