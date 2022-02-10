@@ -55,8 +55,8 @@ const AboutContainerStyles = styled.section`
   }
 
   .face {
-    width: 130px;
-    height: 130px;
+    width: 129px;
+    height: 129px;
     position: relative;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 10px;
