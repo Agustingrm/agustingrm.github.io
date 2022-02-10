@@ -60,7 +60,7 @@ const AboutContainerStyles = styled.section`
     position: relative;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 10px;
-    margin: 3px 5px 0 0;
+    margin: 0px 5px 0 0;
   }
 
   @media all and (max-width: 960px) {
