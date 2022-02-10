@@ -10,16 +10,18 @@ function About() {
   return (
     <AboutContainerStyles id="about">
       <h2>About Me</h2>
-      <img src={face} alt="Agustin Gramajo Gaitan" loading="lazy" className="face" />
-      <p>
-        Hello, my name is Agustin and I am originally from Argentina but with Spanish roots so I have both
-        nationalities. I am currently 27 years old and I have a degree in Industrial Engineering from the
-        National University of Tucumán, Argentina. After finishing my degree, having studied some notions of
-        programming for industrial equipment, I decided to get more into this world. I started doing two
-        diploma courses at the National Technological University of Argentina, which allowed me to learn
-        concepts of HTML5, CSS and Javascript, including some libraries like React and also Node.js with
-        Express.
-      </p>
+      <div className="faceAndText">
+        <img src={face} alt="Agustin Gramajo Gaitan" loading="lazy" className="face" />
+        <p>
+          Hello, my name is Agustin and I am originally from Argentina but with Spanish roots so I have both
+          nationalities. I am currently 27 years old and I have a degree in Industrial Engineering from the
+          National University of Tucumán, Argentina. After finishing my degree, having studied some notions of
+          programming for industrial equipment, I decided to get more into this world. I started doing two
+          diploma courses at the National Technological University of Argentina, which allowed me to learn
+          concepts of HTML5, CSS and Javascript, including some libraries like React and also Node.js with
+          Express.
+        </p>
+      </div>
       <p className="secondPart">
         From the moment I started studying programming I knew that this was what I wanted to work on during my
         life, so I dedicated many hours of study per week in order to achieve my goal, helping me with online
