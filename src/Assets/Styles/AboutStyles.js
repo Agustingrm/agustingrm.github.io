@@ -3,7 +3,7 @@ import styled from "styled-components";
 const AboutContainerStyles = styled.section`
   background-color: rgb(68, 24, 68);
   display: grid;
-  grid-template-columns: 130px 700px;
+  grid-template-columns: 900px;
   justify-content: center;
   grid-column-gap: 20px;
   color: white;
@@ -13,7 +13,6 @@ const AboutContainerStyles = styled.section`
     font-size: 45px;
     color: white;
     font-weight: 400;
-    grid-column: span 2;
     text-align: center;
     margin: 0 0 10px;
   }
@@ -26,11 +25,9 @@ const AboutContainerStyles = styled.section`
     margin: 0;
   }
   .secondPart {
-    grid-column: span 2;
     margin-bottom: 10px;
   }
   .languages {
-    grid-column: span 2;
     margin: 0;
   }
   .languageContainer {
@@ -53,25 +50,30 @@ const AboutContainerStyles = styled.section`
     margin-right: 5px;
   }
 
+  .faceAndText {
+    display: flex;
+  }
+
   .face {
     width: 130px;
+    height: 130px;
     position: relative;
     border: 2px solid rgb(202, 202, 202);
     border-radius: 10px;
-    float: left;
+    margin: 3px 5px 0 0;
   }
 
   @media all and (max-width: 960px) {
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 100%;
     padding: 75px 5%;
+    .faceAndText {
+      display: inline;
+      .face {
+        float: left;
+      }
+    }
     h2 {
       margin-bottom: 15px;
-    }
-    p {
-      grid-column: span 2;
-    }
-    .face {
-      display: none;
     }
     .languageContainer {
       display: flex;
