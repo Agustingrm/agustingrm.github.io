@@ -22,6 +22,7 @@ const SkillsContainerStyles = styled.section`
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+    margin: 25px 0 15px;
   }
 
   .skillContainer {
