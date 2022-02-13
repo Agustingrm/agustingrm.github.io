@@ -124,6 +124,9 @@ const ProjectContainerStyles = styled.section`
   }
 
   @media all and (max-width: 405px) {
+    h2 {
+      font-size: 40px;
+    }
     .projectButtonsContainer {
       a {
         font-size: 16px;

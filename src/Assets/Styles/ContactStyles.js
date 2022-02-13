@@ -19,6 +19,7 @@ const ContactContainerStyles = styled.section`
   }
   p {
     color: white;
+    text-align: center;
   }
 
   .socialNetworks {

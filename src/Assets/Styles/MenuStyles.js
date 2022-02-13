@@ -95,7 +95,7 @@ const MenuContainerStyles = styled.header`
 
   @media all and (max-width: 450px) {
     h1 {
-      font-size: 25px;
+      font-size: 24px;
     }
   }
 `;
