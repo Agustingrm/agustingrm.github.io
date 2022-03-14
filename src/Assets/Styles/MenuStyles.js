@@ -43,11 +43,11 @@ const MenuContainerStyles = styled.header`
       font-size: 18px;
       a {
         text-decoration: none;
-        color: inherit;
+        color: white;
       }
-    }
-    li:hover {
-      color: #a700a7;
+      a:hover {
+        color: #a700a7;
+      }
     }
   }
 
