@@ -9,7 +9,7 @@ const HomeContainerStyles = styled.section`
   h2 {
     margin: 0;
     text-align: center;
-    padding-top: 18%;
+    padding-top: 35vh;
     color: white;
     font-size: 48px;
     font-weight: 400;

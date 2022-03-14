@@ -16,8 +16,8 @@ function Menu() {
     setRotationTop({});
     setRotationBottom({});
     setRotationMiddle({});
-    setMenuMovement({});
-    setMenu(false);
+    setMenuMovement({ y: 50 });
+    setTimeout(console.log("asd"), 1000);
   };
 
   const handleMenuClick = () => {
