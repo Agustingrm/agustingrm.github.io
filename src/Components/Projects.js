@@ -2,9 +2,11 @@ import PortfolioContext from "../Context/PortfolioContext";
 import { useContext } from "react";
 import SkillsDisplay from "./SkillsDisplay";
 import ProjectContainerStyles from "../Assets/Styles/ProjectsStyles";
+import mixpanel from "mixpanel-browser";
 
 function Projects() {
   const context = useContext(PortfolioContext);
+
   if (context.loading) {
     return <></>;
   } else {
@@ -15,8 +17,16 @@ function Projects() {
           {context.data.projects.map((project) => {
             return (
               <div className="projectContainer" key={project.name}>
-                <a href={project.previewLink} target="_blank" rel="noreferrer noopener">
-                  <img src={project.image.asset.url} alt="Project Preview" className="projectImage" />
+                <a
+                  href={project.previewLink}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <img
+                    src={project.image.asset.url}
+                    alt="Project Preview"
+                    className="projectImage"
+                  />
                   <img
                     src={project.dynamicImage.asset.url}
                     alt="Dynamic Preview"
@@ -26,7 +36,12 @@ function Projects() {
                 <h3>{project.name}</h3>
                 <div className="projectSkills">
                   {project.technologiesEmployed.map((skill) => {
-                    return <SkillsDisplay skill={skill} key={`technologiesEmployed${skill.name}`} />;
+                    return (
+                      <SkillsDisplay
+                        skill={skill}
+                        key={`technologiesEmployed${skill.name}`}
+                      />
+                    );
                   })}
                 </div>
                 <div className="projectButtonsContainer">
@@ -35,6 +50,9 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer noopener"
                     className="firstButton"
+                    onClick={() =>
+                      mixpanel.track(`View Code - ${project.name}`)
+                    }
                   >
                     View Code
                   </a>
@@ -43,6 +61,7 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer noopener"
                     className="secondButton"
+                    onClick={() => mixpanel.track(`Preview - ${project.name}`)}
                   >
                     Live Preview
                   </a>

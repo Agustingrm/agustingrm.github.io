@@ -78,7 +78,11 @@ function GlobalState({ children }) {
       });
   }, []);
 
-  return <PortfolioContext.Provider value={{ data, loading }}>{children}</PortfolioContext.Provider>;
+  return (
+    <PortfolioContext.Provider value={{ data, loading }}>
+      {children}
+    </PortfolioContext.Provider>
+  );
 }
 
 export default GlobalState;
