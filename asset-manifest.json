@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.c53eb32f.chunk.js",
-    "main.js.map": "/static/js/main.c53eb32f.chunk.js.map",
+    "main.js": "/static/js/main.46e7d1a4.chunk.js",
+    "main.js.map": "/static/js/main.46e7d1a4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e7cdadc5.js",
     "runtime-main.js.map": "/static/js/runtime-main.e7cdadc5.js.map",
-    "static/js/2.5591d492.chunk.js": "/static/js/2.5591d492.chunk.js",
-    "static/js/2.5591d492.chunk.js.map": "/static/js/2.5591d492.chunk.js.map",
+    "static/js/2.8e87470a.chunk.js": "/static/js/2.8e87470a.chunk.js",
+    "static/js/2.8e87470a.chunk.js.map": "/static/js/2.8e87470a.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.5591d492.chunk.js.LICENSE.txt": "/static/js/2.5591d492.chunk.js.LICENSE.txt",
+    "static/js/2.8e87470a.chunk.js.LICENSE.txt": "/static/js/2.8e87470a.chunk.js.LICENSE.txt",
     "static/media/Brazil.3c1a2075.svg": "/static/media/Brazil.3c1a2075.svg",
     "static/media/France.9ce5346a.svg": "/static/media/France.9ce5346a.svg",
     "static/media/Germany.0fce3f51.svg": "/static/media/Germany.0fce3f51.svg",
@@ -23,7 +23,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e7cdadc5.js",
-    "static/js/2.5591d492.chunk.js",
-    "static/js/main.c53eb32f.chunk.js"
+    "static/js/2.8e87470a.chunk.js",
+    "static/js/main.46e7d1a4.chunk.js"
   ]
 }
