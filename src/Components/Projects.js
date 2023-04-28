@@ -56,15 +56,19 @@ function Projects() {
                   >
                     View Code
                   </a>
-                  <a
-                    href={project.previewLink}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="secondButton"
-                    onClick={() => mixpanel.track(`Preview - ${project.name}`)}
-                  >
-                    Live Preview
-                  </a>
+                  {project.previewLink && (
+                    <a
+                      href={project.previewLink}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="secondButton"
+                      onClick={() =>
+                        mixpanel.track(`Preview - ${project.name}`)
+                      }
+                    >
+                      Live Preview
+                    </a>
+                  )}
                 </div>
               </div>
             );
