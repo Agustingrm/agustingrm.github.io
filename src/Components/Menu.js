@@ -17,7 +17,7 @@ function Menu() {
     setRotationBottom({});
     setRotationMiddle({});
     setMenuMovement({ y: 50 });
-    setTimeout(console.log("asd"), 1000);
+    setMenu(false);
   };
 
   const handleMenuClick = () => {
@@ -40,8 +40,11 @@ function Menu() {
           </a>
         </h1>
       </div>
-      {/* <ul className={menu ? "displayMenu" : "hideMenu"} animate={{x: -50}}> */}
-      <motion.ul className="displayMenu" animate={menu ? menuMovement : ""} transition={{ type: "tween" }}>
+      <motion.ul
+        className="displayMenu"
+        animate={menu ? menuMovement : ""}
+        transition={{ type: "tween" }}
+      >
         <li>
           <a href="#home" onClick={resetAnimations}>
             Home
